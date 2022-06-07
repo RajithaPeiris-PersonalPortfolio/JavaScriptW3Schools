@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript THIS Keyword</title>
+</head>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    // Create an object:
+    const person = {
+        firstName: "John",
+        middleName: "Martinez",
+        lastName: "Doe",
+        id: 5566,
+        fullName : function() {
+            return this.firstName + " " + this.middleName + " " + this.lastName;
+        },
+        personid : function() {
+            return this.id;
+        }
+    };
+
+    // Display data from the object:
+    document.getElementById("demo1").innerHTML = person.fullName();
+    document.getElementById("demo2").innerHTML = person.personid();
+</script>
+
+</body>
+</html>
