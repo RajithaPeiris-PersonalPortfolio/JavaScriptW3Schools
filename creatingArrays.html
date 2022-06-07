@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating Arrays</title>
+</head>
+<body>
+
+<h2>Creating JavaScript Arrays</h2>
+<h2>Single Line Method</h2>
+<p>A declaration can be a single line:</p>
+
+<p id="array1"></p>
+
+<script>
+    const cars1 = ["Cadillac" + ", " + "BMW" + ", " + "Lexus"];
+    document.getElementById("array1").innerHTML = cars1;
+
+</script>
+
+<h2>Multiple Lines Method</h2>
+<p>A declaration can be broken to multiple lines:</p>
+
+<p id="array2"></p>
+
+<script>
+    const cars2 = [
+        "Toyota" +
+        ", " +
+        "Nissan" +
+        ", " +
+        "Kia"];
+    document.getElementById("array2").innerHTML = cars2;
+
+</script>
+
+
+<h2>An Empty Array With Separate Elements Method</h2>
+<p>You can also create an array, and then provide the elements:</p>
+
+<p id="array3"></p>
+
+<script>
+    const cars3 = [];
+    cars3[0]= "Saab";
+    cars3[1]= " Volvo";
+    cars3[2]= " BMW";
+    document.getElementById("array3").innerHTML = cars3;
+
+</script>
+</body>
+</html>
